@@ -669,3 +669,45 @@ footer {
 
   color: rgba(255, 255, 255, 0.6);
 }
+.comand-social.footer {
+  align-items: center;
+  margin-left: auto;
+}
+
+.comand-social {
+  margin: 0;
+  padding: 0;
+}
+
+.container.accession {
+  display: flex;
+}
+.footer-text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.comand-link.footer {
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  margin: 0;
+  background: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+}
+.comand-item {
+  margin-right: 10px;
+}
+
+.comand-icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
