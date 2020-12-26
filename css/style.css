@@ -426,8 +426,8 @@ img {
   height: 44px;
   border-radius: 50%;
   margin: 0;
+  background: #ffffff;
   color: #afb1b8;
-  background-color: teal;
 }
 .comand-item {
   margin-right: 10px;
@@ -436,14 +436,13 @@ img {
 .comand-icon {
   width: 20px;
   height: 20px;
-
   fill: currentColor;
 }
 
-.comand-link :hover,
-.comand-link :focus {
+.comand-item.link :hover,
+.omand-item.link :focus {
   fill: #ffffff;
-  background-color: red;
+  background: var(--accent-color);
 }
 
 .comand.item {
