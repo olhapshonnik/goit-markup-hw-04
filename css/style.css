@@ -635,7 +635,7 @@ footer {
 }
 
 .container .address {
-  display: flex;
+  display: inline-block;
   flex-direction: column;
   flex-wrap: wrap;
 
@@ -710,4 +710,12 @@ footer {
   width: 20px;
   height: 20px;
   fill: currentColor;
+}
+.footer-flex {
+  display: flex;
+  margin-right: auto;
+  margin-left: auto;
+}
+.container.footer {
+  display: block;
 }
