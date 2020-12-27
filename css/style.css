@@ -377,7 +377,7 @@ img {
   padding: 0;
   list-style: none;
 }
-.section-work,
+.section-works,
 .section-comand:not(:nth-last-child(1)) {
   margin-right: 30px;
 }
@@ -453,6 +453,59 @@ img {
   margin-top: 0;
   margin-bottom: 0;
   padding-left: 0;
+}
+
+/*Постоянные клиенты*/
+.section-client {
+  padding-top: 94px;
+  padding-bottom: 113px;
+}
+.section-client {
+  background: #e5e5e5;
+}
+.regular-customers {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.67;
+  text-align: center;
+
+  letter-spacing: 0.03em;
+}
+.logo-one {
+  width: 44.27px;
+  height: 49.23px;
+}
+.logo-two {
+  width: 40px;
+  height: 52px;
+}
+.logo-three {
+  width: 41px;
+  height: 42.6px;
+}
+.logo-four {
+  width: 79.66px;
+  height: 42.02px;
+}
+.logo-five {
+  width: 59px;
+  height: 47px;
+}
+.logo-six {
+  width: 88.48px;
+  height: 45.44px;
+}
+.link-client {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  width: 170px;
+  height: 90px;
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+  fill: #afb1b8;
 }
 
 /* портфолио */
@@ -607,9 +660,6 @@ footer {
   padding: 0;
 }
 
-/*.footer-address {
-  display: inline-block;
-}*/
 .container.address {
   margin: 0;
   padding: 0;
@@ -678,10 +728,6 @@ footer {
 
   color: rgba(255, 255, 255, 0.6);
 }
-/*.comand-social.footer {
-  align-items: center;
-  margin-left: auto;
-}*/
 
 .comand-social {
   margin: 0;
@@ -721,23 +767,10 @@ footer {
   display: block;
 }
 
-/*.footer .container {
-  display: flex;
-}
-
-.footer-social {
-  display: flex;
-}
-.comand-social {
-  display: flex;
-}*/
 .footer-item {
   display: flex;
 }
-.logo-one {
-  width: 45px;
-  height: 49px;
-}
+
 .footer-social {
   margin-left: 70px;
 }
