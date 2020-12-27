@@ -351,8 +351,6 @@ img {
 .comands {
   padding-bottom: 94px;
   padding-top: 94px;
-}
-.section-comand {
   text-align: center;
 
   background-color: var(--background-color-secondare);
@@ -507,7 +505,11 @@ img {
   border: 1px solid #afb1b8;
   fill: #afb1b8;
 }
-
+.logotype-link :hover,
+.logotype-link :focus {
+  fill: #2196f3;
+  border-color: #2196f3;
+}
 /* портфолио */
 /* кнопки */
 .section-portfolio {
