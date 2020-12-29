@@ -6,6 +6,8 @@
   --backround-color: #e5e5e5;
   --background-color-secondare: #f5f4fa;
   --background-hero-color: #2f303a;
+  --color-icon: #afb1b8;
+  --border-portfolio: #eeeeee;
 }
 /* цвет основного текста #212121 */
 
@@ -30,7 +32,7 @@ main {
 header {
   background-color: var(--text-color);
 
-  border-bottom: 1px solid #eeeeee;
+  border-bottom: 1px solid var(--border-portfolio);
 }
 
 .link {
@@ -235,6 +237,11 @@ img {
 
   color: var(--text-color);
   background-color: var(--background-hero-color);
+  background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../images/hero.jpg");
 }
 
 .hero-tittle {
@@ -424,8 +431,8 @@ img {
   height: 44px;
   border-radius: 50%;
   margin: 0;
-  background: #ffffff;
-  color: #afb1b8;
+  background: var(--text-color);
+  color: var(--color-icon);
 }
 .comand-item {
   margin-right: 10px;
@@ -439,7 +446,7 @@ img {
 
 .comand-item.link :hover,
 .omand-item.link :focus {
-  fill: #ffffff;
+  fill: var(--text-color);
   background: var(--accent-color);
 }
 
@@ -459,7 +466,7 @@ img {
   padding-bottom: 113px;
 }
 .section-client {
-  background: #e5e5e5;
+  background: var(--backround-color);
 }
 .regular-customers {
   margin-top: 0;
@@ -502,13 +509,13 @@ img {
   width: 170px;
   height: 90px;
   border-radius: 4px;
-  border: 1px solid #afb1b8;
-  fill: #afb1b8;
+  border: 1px solid var(--color-icon);
+  fill: var(--color-icon);
 }
 .logotype-link :hover,
 .logotype-link :focus {
-  fill: #2196f3;
-  border-color: #2196f3;
+  fill: var(--accent-color);
+  border-color: var(--accent-color);
 }
 /* портфолио */
 /* кнопки */
@@ -566,6 +573,16 @@ img {
   letter-spacing: 0.03em;
 }
 
+.content-cards a:hover,
+.content-cards a:focus {
+  display: block;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+.content-cards a {
+  display: block;
+  border: 1px solid var(--border-portfolio);
+}
 /*набор контента */
 .container .link {
   display: flex;
@@ -605,9 +622,9 @@ img {
 
 .portfolio-card {
   background: #ffffff;
-  border-right: 1px solid #eeeeee;
-  border-bottom: 1px solid #eeeeee;
-  border-left: 1px solid #eeeeee;
+  border-right: 1px solid var(--border-portfolio);
+  border-bottom: 1px solid var(--border-portfolio);
+  border-left: 1px solid var(--border-portfolio);
   box-sizing: border-box;
 
   padding-right: 24px;
@@ -655,8 +672,12 @@ footer {
   color: var(--text-color);
   background: var(--background-hero-color);
 }
-
 .footer-logo {
+  display: block;
+  margin-bottom: 20px;
+  padding: 0;
+}
+.logo-link {
   display: block;
   margin-bottom: 20px;
   padding: 0;
@@ -737,13 +758,16 @@ footer {
 }
 
 .footer-text {
+  margin-top: 0;
+  margin-bottom: 20px;
+
   font-weight: 700;
   font-size: 14px;
   line-height: 1.42;
   letter-spacing: 0.03em;
   text-transform: uppercase;
 
-  color: #ffffff;
+  color: var(--text-color);
 }
 
 .comand-link.footer {
@@ -754,7 +778,7 @@ footer {
   border-radius: 50%;
   margin: 0;
   background: rgba(255, 255, 255, 0.1);
-  color: #ffffff;
+  color: var(--text-color);
 }
 .comand-item {
   margin-right: 10px;
