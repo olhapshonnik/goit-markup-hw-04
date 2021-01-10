@@ -3,7 +3,7 @@
   --secondare-text-color: #757575;
   --text-color: #ffffff;
   --accent-color: #2196f3;
-  --backround-color: #e5e5e5;
+  --backround-color: #ffffff;
   --background-color-secondare: #f5f4fa;
   --background-hero-color: #2f303a;
   --color-icon: #afb1b8;
@@ -62,11 +62,11 @@ a {
   padding-right: 15px;
 }
 
-img {
+/*img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+}*/
 
 /* шапка */
 .container.header {
@@ -292,6 +292,10 @@ img {
   list-style: none;
 }
 
+.feature-caption:not(:last-child) {
+  margin-right: 30px;
+}
+
 .features-subject {
   margin-top: 0;
   margin-bottom: 10px;
@@ -319,12 +323,11 @@ img {
   justify-content: center;
   align-items: center;
 
-  width: auto;
+  width: 270px;
   height: 120px;
   background: var(--background-color-secondare);
   border-radius: 4px;
   margin-bottom: 30px;
-  margin-right: 10px;
 }
 
 .icon {
@@ -343,13 +346,11 @@ img {
 .section-work {
   padding-bottom: 94px;
 }
-
 .work-list {
   display: flex;
 
   list-style: none;
 }
-
 .work-list li:not(:last-child) {
   margin-right: 30px;
 }
@@ -388,6 +389,8 @@ img {
 }
 
 .section-comand {
+  text-align: center;
+
   background: var(--text-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
